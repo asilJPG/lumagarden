@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import MenuApp from "@/components/MenuApp";
+import MenuUnavailable from "@/components/MenuUnavailable";
 import { readMenu } from "@/lib/store";
 import { BRAND } from "@/lib/brand";
 
@@ -12,6 +13,11 @@ export const metadata: Metadata = {
 };
 
 export default async function MenuPage() {
-  const menu = await readMenu();
-  return <MenuApp menu={menu} />;
+  try {
+    const menu = await readMenu();
+    return <MenuApp menu={menu} />;
+  } catch (e) {
+    console.error("readMenu failed:", e);
+    return <MenuUnavailable />;
+  }
 }
