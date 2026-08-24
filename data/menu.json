@@ -184,7 +184,10 @@
             },
             "price": 78000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           },
           {
             "id": "salaty-salat-govyadina",
@@ -200,7 +203,10 @@
             },
             "price": 68000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           }
         ]
       },
@@ -290,7 +296,10 @@
             },
             "price": 42000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           }
         ]
       },
@@ -398,6 +407,7 @@
             "imageUrl": "",
             "available": true,
             "badges": [
+              "hit",
               "spicy"
             ]
           },
@@ -556,7 +566,10 @@
             },
             "price": 105000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           },
           {
             "id": "pizza-gavayskaya",
@@ -704,7 +717,10 @@
             },
             "price": 113000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           },
           {
             "id": "myaso-lopatka-yagnenka",
@@ -720,7 +736,10 @@
             },
             "price": 120000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           },
           {
             "id": "myaso-kare-yagnenka",
@@ -874,7 +893,10 @@
             },
             "price": 95000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           }
         ]
       },
@@ -983,7 +1005,10 @@
             },
             "price": 65000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           },
           {
             "id": "ptica-okorochok-cyplenok",
@@ -999,7 +1024,10 @@
             },
             "price": 69000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           }
         ]
       },
@@ -1060,7 +1088,10 @@
             },
             "price": 168000,
             "imageUrl": "",
-            "available": true
+            "available": true,
+            "badges": [
+              "hit"
+            ]
           }
         ]
       },
