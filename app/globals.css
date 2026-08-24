@@ -1873,3 +1873,12 @@ body:has(dialog[open]) {
 .dialog-body--text {
   padding-top: 46px;
 }
+
+/* Программа лояльности общая на два заведения — строка под заголовком. */
+.lp-venues {
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--brand-gold);
+  margin-bottom: 10px;
+}

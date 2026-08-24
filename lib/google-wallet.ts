@@ -98,16 +98,18 @@ export function createGoogleWalletLink(
   const origins = walletOrigins(config, requestOrigin);
   const now = Math.floor(Date.now() / 1000);
 
-  // Класс и issuerName общие с The Lokmaco — намеренно. Второй класс означал бы
-  // вторую, не связанную программу лояльности: у гостей отвалились бы карты.
+  // Класс общий с The Lokmaco — намеренно: второй класс означал бы вторую,
+  // не связанную программу, и у гостей отвалились бы карты.
+  // ВАЖНО: ровно такой же issuerName должен отправлять деплой lokmaco-qr.
+  // Класс один, и та отправка, что пришла последней, перезаписывает название.
   const loyaltyClass = {
     id: classId,
-    issuerName: "The Lokmaco",
+    issuerName: "The Lokmaco · Luma Garden",
     reviewStatus: "UNDER_REVIEW",
     programName: "Бонусная карта",
     hexBackgroundColor: "#3B2416",
     ...(config.logoUrl
-      ? { programLogo: walletImage(config.logoUrl, "The Lokmaco logo") }
+      ? { programLogo: walletImage(config.logoUrl, "Логотип программы лояльности") }
       : {}),
   };
 

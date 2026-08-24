@@ -44,7 +44,7 @@ function LoyaltyCard({ customer, lang }: { customer: Customer; lang: Lang }) {
         <div className="loyalty-card__shine" />
         <div className="loyalty-card__top">
           <span className="loyalty-card__eyebrow">{t.card_eyebrow}</span>
-          <span className="loyalty-card__logo">{BRAND.logoText}</span>
+          <span className="loyalty-card__logo">{BRAND.program.name}</span>
         </div>
         <div className="loyalty-card__balance">
           <span className="loyalty-card__balance-label">{t.card_balance}</span>
@@ -74,6 +74,7 @@ function LoyaltyProgram({ lang, onJoin }: { lang: Lang; onJoin?: () => void }) {
   return (
     <div className="loyalty-program">
       <h2 className="lp-title">{t.card_rules_title}</h2>
+      <p className="lp-venues">{t.card_venues}</p>
       <p className="lp-intro">{t.card_program_intro}</p>
 
       <div className="lp-section">

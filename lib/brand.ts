@@ -30,6 +30,12 @@ export interface Brand {
     gold: string;
     text: string;
   };
+  /** Программа лояльности общая с The Lokmaco: одна организация iiko,
+   *  один класс Google Wallet, один баланс. Название — общее для обоих. */
+  program: {
+    name: string;
+    venues: string;
+  };
   metadata: {
     menuTitle: string;
     menuDescription: string;
@@ -56,6 +62,10 @@ export const BRAND: Brand = {
     ochre: "#8A5A3B",
     gold: "#9A7B3E",
     text: "#2C2C24",
+  },
+  program: {
+    name: "The Lokmaco · Luma Garden",
+    venues: "Карта действует в The Lokmaco и Luma Garden",
   },
   metadata: {
     menuTitle: "Luma Garden · Меню",
