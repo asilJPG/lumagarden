@@ -1850,3 +1850,26 @@ body:has(dialog[open]) {
 .chef-strip__head h2 {
   font-style: italic;
 }
+
+/* ---------- Карточки без фотографии ---------- */
+/* Пока у блюд нет фото: заглушка 4/3 в каждой карточке превращала список
+   в поле пустых плашек. Убираем её, карточка живёт на тексте. */
+.dish-card--text .dish-card__body {
+  padding: 16px 16px 18px;
+  gap: 8px;
+}
+
+.dish-card--text .dish-card__name {
+  font-family: var(--font-serif), serif;
+  font-size: 17px;
+}
+
+.dish-card--text .dish-card__desc {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+/* В диалоге без картинки крестик закрытия иначе наезжает на заголовок. */
+.dialog-body--text {
+  padding-top: 46px;
+}

@@ -117,6 +117,10 @@ export default function MenuApp({ menu }: { menu: MenuData }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const sectionKeys = useMemo(
+    () => (["food", "drinks"] as SectionKey[]).filter((s) => menu.sections[s].length > 0),
+    [menu]
+  );
   const categories = menu.sections[section];
   const availableItems = useMemo(
     () => categories.flatMap((c) => c.items.filter((i) => i.available)),
@@ -209,8 +213,9 @@ export default function MenuApp({ menu }: { menu: MenuData }) {
         </header>
 
         <section className="menu-controls">
+          {sectionKeys.length > 1 && (
           <div className="section-tabs" role="tablist">
-            {(["food", "drinks"] as SectionKey[]).map((s) => (
+            {sectionKeys.map((s) => (
               <button
                 key={s}
                 type="button"
@@ -223,6 +228,7 @@ export default function MenuApp({ menu }: { menu: MenuData }) {
               </button>
             ))}
           </div>
+          )}
 
           <div className="search-field">
             <span className="search-field__icon" aria-hidden>⌕</span>
@@ -301,15 +307,13 @@ export default function MenuApp({ menu }: { menu: MenuData }) {
                   <button
                     key={item.id}
                     type="button"
-                    className="dish-card"
+                    className={`dish-card ${item.imageUrl ? "" : "dish-card--text"}`}
                     onClick={() => setSelected(item)}
                   >
                     <DishBadges badges={item.badges} lang={lang} />
                     {item.imageUrl ? (
                       <img className="dish-card__img" src={item.imageUrl} alt={item.name[lang]} loading="lazy" style={{ objectPosition: item.imagePosition, transformOrigin: item.imagePosition, transform: item.imageZoom && item.imageZoom !== 1 ? `scale(${item.imageZoom})` : undefined }} />
-                    ) : (
-                      <div className="dish-card__placeholder" aria-hidden>{view.name[0]}</div>
-                    )}
+                    ) : null}
                     <div className="dish-card__body">
                       <div className="dish-card__name">{item.name[lang]}</div>
                       <div className="dish-card__desc">{item.description[lang]}</div>
@@ -409,12 +413,8 @@ export default function MenuApp({ menu }: { menu: MenuData }) {
               <div className="dialog-img-wrapper" style={{ position: "relative" }}>
                 <img className="dialog-img" src={selected.imageUrl} alt={selected.name[lang]} style={{ objectPosition: selected.imagePosition, transformOrigin: selected.imagePosition, transform: selected.imageZoom && selected.imageZoom !== 1 ? `scale(${selected.imageZoom})` : undefined }} />
               </div>
-            ) : (
-              <div className="dialog-img-wrapper">
-                <div className="dish-card__placeholder" aria-hidden>{view.name[0]}</div>
-              </div>
-            )}
-            <div className="dialog-body">
+            ) : null}
+            <div className={`dialog-body ${selected.imageUrl ? "" : "dialog-body--text"}`}>
               <h3>{selected.name[lang]}</h3>
               <p className="dialog-desc">{selected.description[lang]}</p>
               <div className="dialog-meta">

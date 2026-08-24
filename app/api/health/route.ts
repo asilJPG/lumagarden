@@ -9,11 +9,7 @@ export async function GET() {
   const set = (name: string) => !!process.env[name];
 
   const env = {
-    supabase: {
-      SUPABASE_URL: set("SUPABASE_URL"),
-      SUPABASE_SERVICE_ROLE_KEY: set("SUPABASE_SERVICE_ROLE_KEY"),
-      SUPABASE_STORAGE_BUCKET: process.env.SUPABASE_STORAGE_BUCKET || "lokmaco-uploads (по умолчанию)",
-    },
+    // Меню лежит в репозитории, внешнее хранилище для него не нужно.
     iiko: {
       IIKO_API_KEY: set("IIKO_API_KEY"),
       IIKO_APP_ID: set("IIKO_APP_ID"),
@@ -32,18 +28,13 @@ export async function GET() {
     },
   };
 
-  let menu: { ok: boolean; categories?: number; items?: number; error?: string };
-  try {
-    const data = await readMenu();
-    const cats = [...data.sections.food, ...data.sections.drinks];
-    menu = {
-      ok: true,
-      categories: cats.length,
-      items: cats.reduce((n, c) => n + c.items.length, 0),
-    };
-  } catch (e) {
-    menu = { ok: false, error: e instanceof Error ? e.message : String(e) };
-  }
+  const data = await readMenu();
+  const cats = [...data.sections.food, ...data.sections.drinks];
+  const menu = {
+    ok: true,
+    categories: cats.length,
+    items: cats.reduce((n, c) => n + c.items.length, 0),
+  };
 
-  return NextResponse.json({ ok: menu.ok, menu, env }, { status: menu.ok ? 200 : 503 });
+  return NextResponse.json({ ok: true, menu, env });
 }

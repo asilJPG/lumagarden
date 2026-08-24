@@ -44,10 +44,10 @@ export const BRAND: Brand = {
   key: "luma",
   name: "Luma Garden",
   logoText: "Luma Garden",
-  tagline: "",
+  tagline: "Restaurant & Catering",
   welcomeTitle: "Luma Garden",
   welcomeLine: "Xush kelibsiz • Добро пожаловать • Welcome",
-  info: {},
+  info: { service: "13%" },
   palette: {
     bg: "#F4F0E4",
     surface: "#E2E4D2",
