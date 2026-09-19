@@ -4,7 +4,7 @@
     "tagline": "Restaurant & Catering",
     "currency": {
       "ru": "сум",
-      "uz": "so‘m",
+      "uz": "so'm",
       "en": "UZS"
     },
     "welcomeTitle": "Luma Garden",
@@ -16,11 +16,359 @@
   "sections": {
     "food": [
       {
+        "id": "kashi",
+        "name": {
+          "ru": "Каши",
+          "uz": "Каши",
+          "en": "Porridge"
+        },
+        "items": [
+          {
+            "id": "kashi-risovaya",
+            "name": {
+              "ru": "Каша рисовая",
+              "uz": "Каша рисовая",
+              "en": "Rice Porridge"
+            },
+            "description": {
+              "ru": "Разваристый рис на цельном молоке со сливочным маслом и яблоками в карамели",
+              "uz": "Разваристый рис на цельном молоке со сливочным маслом и яблоками в карамели",
+              "en": "Slow-cooked rice in whole milk with butter and caramelized apples"
+            },
+            "price": 35000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/kasha-risovaya.jpg?v=1786716154",
+            "available": true
+          },
+          {
+            "id": "kashi-mannaya",
+            "name": {
+              "ru": "Каша манная",
+              "uz": "Каша манная",
+              "en": "Semolina Porridge"
+            },
+            "description": {
+              "ru": "Бархатная манная каша со сливочным маслом и яблоками с корицей",
+              "uz": "Бархатная манная каша со сливочным маслом и яблоками с корицей",
+              "en": "Velvety semolina with butter and cinnamon apples"
+            },
+            "price": 35000,
+            "imageUrl": "",
+            "available": true
+          },
+          {
+            "id": "kashi-ovsyanaya",
+            "name": {
+              "ru": "Каша овсяная",
+              "uz": "Каша овсяная",
+              "en": "Oatmeal"
+            },
+            "description": {
+              "ru": "Тёплая овсяная каша на молоке с клубникой и голубикой",
+              "uz": "Тёплая овсяная каша на молоке с клубникой и голубикой",
+              "en": "Warm oatmeal in milk with strawberries and blueberries"
+            },
+            "price": 35000,
+            "imageUrl": "",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "bliny",
+        "name": {
+          "ru": "Блины",
+          "uz": "Блины",
+          "en": "Crêpes"
+        },
+        "items": [
+          {
+            "id": "bliny-s-maslom",
+            "name": {
+              "ru": "Блины с маслом",
+              "uz": "Блины с маслом",
+              "en": "Crêpes with Butter"
+            },
+            "description": {
+              "ru": "Классические, со сливочным маслом",
+              "uz": "Классические, со сливочным маслом",
+              "en": "Classic crêpes with butter"
+            },
+            "price": 21000,
+            "imageUrl": "",
+            "available": true
+          },
+          {
+            "id": "bliny-s-tvorogom",
+            "name": {
+              "ru": "Блины с творогом",
+              "uz": "Блины с творогом",
+              "en": "Crêpes with Cottage Cheese"
+            },
+            "description": {
+              "ru": "Творог со сгущённым молоком, сметана и свежие ягоды",
+              "uz": "Творог со сгущённым молоком, сметана и свежие ягоды",
+              "en": "Cottage cheese with condensed milk, sour cream, and fresh berries"
+            },
+            "price": 30000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/bliny-tvorog.jpg?v=1786716154",
+            "available": true
+          },
+          {
+            "id": "bliny-s-nutella",
+            "name": {
+              "ru": "Блины с Nutella",
+              "uz": "Блины с Nutella",
+              "en": "Crêpes with Nutella"
+            },
+            "description": {
+              "ru": "Nutella, банан и свежие ягоды",
+              "uz": "Nutella, банан и свежие ягоды",
+              "en": "Nutella, banana, and fresh berries"
+            },
+            "price": 35000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/bliny-nutella.jpg?v=1786716154",
+            "available": true
+          },
+          {
+            "id": "bliny-s-yablochnym-dzhemom",
+            "name": {
+              "ru": "Блины с яблочным джемом",
+              "uz": "Блины с яблочным джемом",
+              "en": "Crêpes with Apple Jam"
+            },
+            "description": {
+              "ru": "Яблоки в карамели, сметана и свежие ягоды",
+              "uz": "Яблоки в карамели, сметана и свежие ягоды",
+              "en": "Apples in caramel, sour cream, and fresh berries"
+            },
+            "price": 30000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/bliny-apple.jpg?v=1786716154",
+            "available": true
+          },
+          {
+            "id": "bliny-s-myasom",
+            "name": {
+              "ru": "Блины с мясом",
+              "uz": "Блины с мясом",
+              "en": "Crêpes with Beef"
+            },
+            "description": {
+              "ru": "Сочная говядина с луком и сметаной",
+              "uz": "Сочная говядина с луком и сметаной",
+              "en": "Juicy beef with onion and sour cream"
+            },
+            "price": 35000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/bliny-myaso.jpg?v=1786716154",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "yaytsa",
+        "name": {
+          "ru": "Яйца",
+          "uz": "Яйца",
+          "en": "Eggs"
+        },
+        "items": [
+          {
+            "id": "yaytsa-yaichnica-klassicheskaya",
+            "name": {
+              "ru": "Яичница классическая",
+              "uz": "Яичница классическая",
+              "en": "Classic Fried Eggs"
+            },
+            "description": {
+              "ru": "Яичница на растительном масле со свежей микрозеленью",
+              "uz": "Яичница на растительном масле со свежей микрозеленью",
+              "en": "Fried eggs in vegetable oil with fresh microgreens"
+            },
+            "price": 30000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/omlet-yaichnica.jpg?v=1786716154",
+            "available": true
+          },
+          {
+            "id": "yaytsa-yaichnica-indeyka",
+            "name": {
+              "ru": "Яичница с индейкой",
+              "uz": "Яичница с индейкой",
+              "en": "Fried Eggs with Turkey"
+            },
+            "description": {
+              "ru": "Нежная яичница с копчёной индейкой и свежей микрозеленью",
+              "uz": "Нежная яичница с копчёной индейкой и свежей микрозеленью",
+              "en": "Tender fried eggs with smoked turkey and fresh microgreens"
+            },
+            "price": 35000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/omlet-turkey.jpg?v=1786716154",
+            "available": true
+          },
+          {
+            "id": "yaytsa-firmennyy-omlet",
+            "name": {
+              "ru": "Фирменный омлет с копчёной индейкой",
+              "uz": "Фирменный омлет с копчёной индейкой",
+              "en": "Signature Omelette with Smoked Turkey"
+            },
+            "description": {
+              "ru": "Воздушный омлет с копчёной индейкой, сыром чеддер и томатами черри",
+              "uz": "Воздушный омлет с копчёной индейкой, сыром чеддер и томатами черри",
+              "en": "Fluffy omelette with smoked turkey, cheddar, and cherry tomatoes"
+            },
+            "price": 58000,
+            "imageUrl": "",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "syrniki-tvorog",
+        "name": {
+          "ru": "Сырники и Творог",
+          "uz": "Сырники и Творог",
+          "en": "Cottage Cheese & Syrniki"
+        },
+        "items": [
+          {
+            "id": "syrniki-tvorog-derevenskiy",
+            "name": {
+              "ru": "Деревенский творог",
+              "uz": "Деревенский творог",
+              "en": "Farmhouse Cottage Cheese"
+            },
+            "description": {
+              "ru": "Сметана, сгущённое молоко, клубника и голубика",
+              "uz": "Сметана, сгущённое молоко, клубника и голубика",
+              "en": "Sour cream, condensed milk, strawberries, and blueberries"
+            },
+            "price": 32000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/breakfast-cottage.jpg?v=1786716154",
+            "available": true
+          },
+          {
+            "id": "syrniki-tvorog-firmennye",
+            "name": {
+              "ru": "Фирменные сырники",
+              "uz": "Фирменные сырники",
+              "en": "Signature Syrniki"
+            },
+            "description": {
+              "ru": "Сметана, клубничное пюре и сахарная пудра",
+              "uz": "Сметана, клубничное пюре и сахарная пудра",
+              "en": "Sour cream, strawberry purée, and powdered sugar"
+            },
+            "price": 48000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/breakfast-syrniki.jpg?v=1786716154",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "sytnye-zavtraki",
+        "name": {
+          "ru": "Сытные завтраки",
+          "uz": "Сытные завтраки",
+          "en": "Hearty Breakfasts"
+        },
+        "items": [
+          {
+            "id": "sytnye-zavtraki-shakshuka",
+            "name": {
+              "ru": "Шакшука",
+              "uz": "Шакшука",
+              "en": "Shakshuka"
+            },
+            "description": {
+              "ru": "Яйца, томлённые в томатном соусе с болгарским перцем и орегано. Подаётся с хрустящим хлебом",
+              "uz": "Яйца, томлённые в томатном соусе с болгарским перцем и орегано. Подаётся с хрустящим хлебом",
+              "en": "Eggs poached in tomato sauce with bell pepper and oregano. Served with crusty bread"
+            },
+            "price": 55000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/breakfast-shakshuka.jpg?v=1786716154",
+            "available": true
+          },
+          {
+            "id": "sytnye-zavtraki-angliyskiy",
+            "name": {
+              "ru": "Английский завтрак",
+              "uz": "Английский завтрак",
+              "en": "English Breakfast"
+            },
+            "description": {
+              "ru": "Яичница с сосисками, шампиньонами, томатами и фасолью. Подаётся с хрустящим хлебом",
+              "uz": "Яичница с сосисками, шампиньонами, томатами и фасолью. Подаётся с хрустящим хлебом",
+              "en": "Fried eggs with sausages, mushrooms, tomatoes, and beans. Served with crusty bread"
+            },
+            "price": 78000,
+            "imageUrl": "",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "kruassany",
+        "name": {
+          "ru": "Круассаны",
+          "uz": "Круассаны",
+          "en": "Croissants"
+        },
+        "items": [
+          {
+            "id": "kruassany-indeyka",
+            "name": {
+              "ru": "Круассан с индейкой",
+              "uz": "Круассан с индейкой",
+              "en": "Turkey Croissant"
+            },
+            "description": {
+              "ru": "Круассан с копчёной индейкой, плавленым сыром и руколой",
+              "uz": "Круассан с копчёной индейкой, плавленым сыром и руколой",
+              "en": "Croissant with smoked turkey, melted cheese, and arugula"
+            },
+            "price": 45000,
+            "imageUrl": "",
+            "available": true
+          },
+          {
+            "id": "kruassany-losos",
+            "name": {
+              "ru": "Круассан с лососем",
+              "uz": "Круассан с лососем",
+              "en": "Salmon Croissant"
+            },
+            "description": {
+              "ru": "Лосось, сливочный сыр, зелень",
+              "uz": "Лосось, сливочный сыр, зелень",
+              "en": "Salmon, cream cheese, and greens"
+            },
+            "price": 49000,
+            "imageUrl": "",
+            "available": true
+          },
+          {
+            "id": "kruassany-skrembl",
+            "name": {
+              "ru": "Круассан Скрэмбл",
+              "uz": "Круассан Скрэмбл",
+              "en": "Scramble Croissant"
+            },
+            "description": {
+              "ru": "Яичный скрэмбл, сыр и свежая зелень",
+              "uz": "Яичный скрэмбл, сыр и свежая зелень",
+              "en": "Scrambled eggs, cheese, and fresh greens"
+            },
+            "price": 45000,
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/croissant-skrembl.jpg?v=1786716154",
+            "available": true
+          }
+        ]
+      },
+      {
         "id": "salaty",
         "name": {
           "ru": "Салаты",
           "uz": "Салаты",
-          "en": "Салаты"
+          "en": "Salads"
         },
         "items": [
           {
@@ -28,15 +376,15 @@
             "name": {
               "ru": "Греческий",
               "uz": "Греческий",
-              "en": "Греческий"
+              "en": "Greek Salad"
             },
             "description": {
               "ru": "Помидоры, огурцы, перец, авокадо и сыр фета",
               "uz": "Помидоры, огурцы, перец, авокадо и сыр фета",
-              "en": "Помидоры, огурцы, перец, авокадо и сыр фета"
+              "en": "Tomatoes, cucumbers, peppers, avocado, and feta cheese"
             },
             "price": 52000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/salad-greek.jpg?v=1786716154",
             "available": true
           },
           {
@@ -44,12 +392,12 @@
             "name": {
               "ru": "Цезарь с цыплёнком",
               "uz": "Цезарь с цыплёнком",
-              "en": "Цезарь с цыплёнком"
+              "en": "Chicken Caesar"
             },
             "description": {
               "ru": "Цыплёнок, айсберг, черри и перепелиные яйца",
               "uz": "Цыплёнок, айсберг, черри и перепелиные яйца",
-              "en": "Цыплёнок, айсберг, черри и перепелиные яйца"
+              "en": "Chicken, iceberg lettuce, cherry tomatoes, and quail eggs"
             },
             "price": 58000,
             "imageUrl": "",
@@ -60,15 +408,15 @@
             "name": {
               "ru": "Тунец с зеленью",
               "uz": "Тунец с зеленью",
-              "en": "Тунец с зеленью"
+              "en": "Tuna & Greens"
             },
             "description": {
               "ru": "Тунец, микс салатов, картофель и песто",
               "uz": "Тунец, микс салатов, картофель и песто",
-              "en": "Тунец, микс салатов, картофель и песто"
+              "en": "Tuna, mixed greens, potatoes, and pesto"
             },
             "price": 56000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/salad-tuna.jpg?v=1786716154",
             "available": true
           },
           {
@@ -76,12 +424,12 @@
             "name": {
               "ru": "Баклажаны с томатами",
               "uz": "Баклажаны с томатами",
-              "en": "Баклажаны с томатами"
+              "en": "Eggplant & Tomato"
             },
             "description": {
               "ru": "Баклажаны, помидоры, зелень и кедровый орех",
               "uz": "Баклажаны, помидоры, зелень и кедровый орех",
-              "en": "Баклажаны, помидоры, зелень и кедровый орех"
+              "en": "Eggplant, tomatoes, greens, and pine nuts"
             },
             "price": 48000,
             "imageUrl": "",
@@ -92,12 +440,12 @@
             "name": {
               "ru": "Утка с грушей",
               "uz": "Утка с грушей",
-              "en": "Утка с грушей"
+              "en": "Duck & Pear"
             },
             "description": {
               "ru": "Утиная грудка, груша, черри и брокколи",
               "uz": "Утиная грудка, груша, черри и брокколи",
-              "en": "Утиная грудка, груша, черри и брокколи"
+              "en": "Duck breast, pear, cherry tomatoes, and broccoli"
             },
             "price": 47000,
             "imageUrl": "",
@@ -108,12 +456,12 @@
             "name": {
               "ru": "Сыр с апельсином",
               "uz": "Сыр с апельсином",
-              "en": "Сыр с апельсином"
+              "en": "Cheese & Orange"
             },
             "description": {
               "ru": "Сыр, апельсин, авокадо и черри с манго",
               "uz": "Сыр, апельсин, авокадо и черри с манго",
-              "en": "Сыр, апельсин, авокадо и черри с манго"
+              "en": "Cheese, orange, avocado, and cherry tomatoes with mango"
             },
             "price": 52000,
             "imageUrl": "",
@@ -124,12 +472,12 @@
             "name": {
               "ru": "Томаты с красным луком",
               "uz": "Томаты с красным луком",
-              "en": "Томаты с красным луком"
+              "en": "Tomato & Red Onion"
             },
             "description": {
               "ru": "Томаты, красный лук и зелень с оливковым маслом",
               "uz": "Томаты, красный лук и зелень с оливковым маслом",
-              "en": "Томаты, красный лук и зелень с оливковым маслом"
+              "en": "Tomatoes, red onion, and greens with olive oil"
             },
             "price": 19000,
             "imageUrl": "",
@@ -140,15 +488,15 @@
             "name": {
               "ru": "Витаминный",
               "uz": "Витаминный",
-              "en": "Витаминный"
+              "en": "Vitality Salad"
             },
             "description": {
               "ru": "Брокколи, фасоль, горох, огурцы и рукола",
               "uz": "Брокколи, фасоль, горох, огурцы и рукола",
-              "en": "Брокколи, фасоль, горох, огурцы и рукола"
+              "en": "Broccoli, green beans, peas, cucumbers, and arugula"
             },
             "price": 45000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/salad-vitamin.jpg?v=1786716154",
             "available": true,
             "badges": [
               "hit"
@@ -159,12 +507,12 @@
             "name": {
               "ru": "Буррата",
               "uz": "Буррата",
-              "en": "Буррата"
+              "en": "Burrata"
             },
             "description": {
               "ru": "Томаты, рукола и песто с кедровым орехом и бальзамиком",
               "uz": "Томаты, рукола и песто с кедровым орехом и бальзамиком",
-              "en": "Томаты, рукола и песто с кедровым орехом и бальзамиком"
+              "en": "Tomatoes, arugula, and pesto with pine nuts and balsamic"
             },
             "price": 98000,
             "imageUrl": "",
@@ -175,12 +523,12 @@
             "name": {
               "ru": "Салат с лососем",
               "uz": "Салат с лососем",
-              "en": "Салат с лососем"
+              "en": "Salmon Salad"
             },
             "description": {
               "ru": "Лосось, рукола, черри и фета с кедровым орехом",
               "uz": "Лосось, рукола, черри и фета с кедровым орехом",
-              "en": "Лосось, рукола, черри и фета с кедровым орехом"
+              "en": "Salmon, arugula, cherry tomatoes, and feta with pine nuts"
             },
             "price": 78000,
             "imageUrl": "",
@@ -194,12 +542,12 @@
             "name": {
               "ru": "Салат с говядиной",
               "uz": "Салат с говядиной",
-              "en": "Салат с говядиной"
+              "en": "Beef Salad"
             },
             "description": {
               "ru": "Говяжья вырезка, томаты, баклажаны и болгарский перец с французским хлебом",
               "uz": "Говяжья вырезка, томаты, баклажаны и болгарский перец с французским хлебом",
-              "en": "Говяжья вырезка, томаты, баклажаны и болгарский перец с французским хлебом"
+              "en": "Beef tenderloin, tomatoes, eggplant, and bell pepper with French bread"
             },
             "price": 68000,
             "imageUrl": "",
@@ -215,7 +563,7 @@
         "name": {
           "ru": "Супы",
           "uz": "Супы",
-          "en": "Супы"
+          "en": "Soups"
         },
         "items": [
           {
@@ -223,15 +571,15 @@
             "name": {
               "ru": "Куриный суп",
               "uz": "Куриный суп",
-              "en": "Куриный суп"
+              "en": "Chicken Soup"
             },
             "description": {
               "ru": "Домашняя лапша, курица и перепелиное яйцо",
               "uz": "Домашняя лапша, курица и перепелиное яйцо",
-              "en": "Домашняя лапша, курица и перепелиное яйцо"
+              "en": "Homemade noodles, chicken, and quail egg"
             },
             "price": 32000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/soup-noodle.jpg?v=1786716154",
             "available": true
           },
           {
@@ -239,12 +587,12 @@
             "name": {
               "ru": "Тыквенный крем-суп",
               "uz": "Тыквенный крем-суп",
-              "en": "Тыквенный крем-суп"
+              "en": "Pumpkin Cream Soup"
             },
             "description": {
               "ru": "Бархатный крем-суп из запечённой тыквы со сливками и тыквенными семечками",
               "uz": "Бархатный крем-суп из запечённой тыквы со сливками и тыквенными семечками",
-              "en": "Бархатный крем-суп из запечённой тыквы со сливками и тыквенными семечками"
+              "en": "Velvety cream soup of roasted pumpkin with cream and pumpkin seeds"
             },
             "price": 32000,
             "imageUrl": "",
@@ -255,12 +603,12 @@
             "name": {
               "ru": "Чечевичный крем-суп",
               "uz": "Чечевичный крем-суп",
-              "en": "Чечевичный крем-суп"
+              "en": "Lentil Cream Soup"
             },
             "description": {
               "ru": "Красная чечевица с кореньями и восточными специями",
               "uz": "Красная чечевица с кореньями и восточными специями",
-              "en": "Красная чечевица с кореньями и восточными специями"
+              "en": "Red lentils with root vegetables and Eastern spices"
             },
             "price": 32000,
             "imageUrl": "",
@@ -271,12 +619,12 @@
             "name": {
               "ru": "Рисовый суп с ягнёнком",
               "uz": "Рисовый суп с ягнёнком",
-              "en": "Рисовый суп с ягнёнком"
+              "en": "Lamb & Rice Soup"
             },
             "description": {
               "ru": "Ягнёнок с рисом и овощами в прозрачном бульоне",
               "uz": "Ягнёнок с рисом и овощами в прозрачном бульоне",
-              "en": "Ягнёнок с рисом и овощами в прозрачном бульоне"
+              "en": "Lamb with rice and vegetables in clear broth"
             },
             "price": 36000,
             "imageUrl": "",
@@ -287,12 +635,12 @@
             "name": {
               "ru": "Борщ с говядиной",
               "uz": "Борщ с говядиной",
-              "en": "Борщ с говядиной"
+              "en": "Beef Borscht"
             },
             "description": {
               "ru": "Свёкла, капуста и говядина со сметаной",
               "uz": "Свёкла, капуста и говядина со сметаной",
-              "en": "Свёкла, капуста и говядина со сметаной"
+              "en": "Beetroot, cabbage, and beef with sour cream"
             },
             "price": 42000,
             "imageUrl": "",
@@ -308,7 +656,7 @@
         "name": {
           "ru": "Паста",
           "uz": "Паста",
-          "en": "Паста"
+          "en": "Pasta"
         },
         "items": [
           {
@@ -316,15 +664,15 @@
             "name": {
               "ru": "Аль помодоро",
               "uz": "Аль помодоро",
-              "en": "Аль помодоро"
+              "en": "Al Pomodoro"
             },
             "description": {
               "ru": "Шпинатная паста с черри, чесноком и базиликом",
               "uz": "Шпинатная паста с черри, чесноком и базиликом",
-              "en": "Шпинатная паста с черри, чесноком и базиликом"
+              "en": "Spinach pasta with cherry tomatoes, garlic, and basil"
             },
             "price": 72000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pasta-pomodoro.jpg?v=1786716154",
             "available": true
           },
           {
@@ -332,15 +680,15 @@
             "name": {
               "ru": "Альфредо с цыплёнком",
               "uz": "Альфредо с цыплёнком",
-              "en": "Альфредо с цыплёнком"
+              "en": "Chicken Alfredo"
             },
             "description": {
               "ru": "Феттуччине с цыплёнком и грибами в сливках",
               "uz": "Феттуччине с цыплёнком и грибами в сливках",
-              "en": "Феттуччине с цыплёнком и грибами в сливках"
+              "en": "Fettuccine with chicken and mushrooms in cream sauce"
             },
             "price": 68000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pasta-alfredo.jpg?v=1786716154",
             "available": true
           },
           {
@@ -348,12 +696,12 @@
             "name": {
               "ru": "Альфредо с говядиной",
               "uz": "Альфредо с говядиной",
-              "en": "Альфредо с говядиной"
+              "en": "Beef Alfredo"
             },
             "description": {
               "ru": "Феттуччине с говядиной и грибами в сливках",
               "uz": "Феттуччине с говядиной и грибами в сливках",
-              "en": "Феттуччине с говядиной и грибами в сливках"
+              "en": "Fettuccine with beef and mushrooms in cream sauce"
             },
             "price": 75000,
             "imageUrl": "",
@@ -364,15 +712,15 @@
             "name": {
               "ru": "Спагетти болоньезе",
               "uz": "Спагетти болоньезе",
-              "en": "Спагетти болоньезе"
+              "en": "Spaghetti Bolognese"
             },
             "description": {
               "ru": "Говяжье рагу с сельдереем и морковью",
               "uz": "Говяжье рагу с сельдереем и морковью",
-              "en": "Говяжье рагу с сельдереем и морковью"
+              "en": "Beef ragù with celery and carrots"
             },
             "price": 68000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pasta-bolognese.jpg?v=1786716154",
             "available": true
           },
           {
@@ -380,12 +728,12 @@
             "name": {
               "ru": "Паста с лососем",
               "uz": "Паста с лососем",
-              "en": "Паста с лососем"
+              "en": "Salmon Pasta"
             },
             "description": {
               "ru": "Лосось в сливочном соусе с черри и пармезаном",
               "uz": "Лосось в сливочном соусе с черри и пармезаном",
-              "en": "Лосось в сливочном соусе с черри и пармезаном"
+              "en": "Salmon in cream sauce with cherry tomatoes and Parmesan"
             },
             "price": 82000,
             "imageUrl": "",
@@ -396,15 +744,15 @@
             "name": {
               "ru": "Пенне арабьята",
               "uz": "Пенне арабьята",
-              "en": "Пенне арабьята"
+              "en": "Penne Arrabbiata"
             },
             "description": {
               "ru": "Пенне в томатном соусе с чесноком и базиликом",
               "uz": "Пенне в томатном соусе с чесноком и базиликом",
-              "en": "Пенне в томатном соусе с чесноком и базиликом"
+              "en": "Penne in tomato sauce with garlic and basil"
             },
             "price": 61000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pasta-arrabbiata.jpg?v=1786716154",
             "available": true,
             "badges": [
               "hit",
@@ -416,12 +764,12 @@
             "name": {
               "ru": "Пенне с говядиной",
               "uz": "Пенне с говядиной",
-              "en": "Пенне с говядиной"
+              "en": "Penne with Beef"
             },
             "description": {
               "ru": "Пенне в томатном соусе с чесноком и базиликом",
               "uz": "Пенне в томатном соусе с чесноком и базиликом",
-              "en": "Пенне в томатном соусе с чесноком и базиликом"
+              "en": "Penne in tomato sauce with garlic and basil"
             },
             "price": 75000,
             "imageUrl": "",
@@ -434,7 +782,7 @@
         "name": {
           "ru": "Пицца",
           "uz": "Пицца",
-          "en": "Пицца"
+          "en": "Pizza"
         },
         "items": [
           {
@@ -442,15 +790,15 @@
             "name": {
               "ru": "Маргарита",
               "uz": "Маргарита",
-              "en": "Маргарита"
+              "en": "Margherita"
             },
             "description": {
               "ru": "Томатный соус, моцарелла, свежий базилик и орегано",
               "uz": "Томатный соус, моцарелла, свежий базилик и орегано",
-              "en": "Томатный соус, моцарелла, свежий базилик и орегано"
+              "en": "Tomato sauce, mozzarella, fresh basil, and oregano"
             },
             "price": 52000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pizza-margherita.jpg?v=1786716154",
             "available": true
           },
           {
@@ -458,15 +806,15 @@
             "name": {
               "ru": "Четыре сыра",
               "uz": "Четыре сыра",
-              "en": "Четыре сыра"
+              "en": "Quattro Formaggi"
             },
             "description": {
               "ru": "Моцарелла, пармезан и чеддер с кедровым орехом и мёдом",
               "uz": "Моцарелла, пармезан и чеддер с кедровым орехом и мёдом",
-              "en": "Моцарелла, пармезан и чеддер с кедровым орехом и мёдом"
+              "en": "Mozzarella, Parmesan, and cheddar with pine nuts and honey"
             },
             "price": 65000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pizza-four-cheeses.jpg?v=1786716154",
             "available": true
           },
           {
@@ -474,12 +822,12 @@
             "name": {
               "ru": "Груша и горгонзола",
               "uz": "Груша и горгонзола",
-              "en": "Груша и горгонзола"
+              "en": "Pear & Gorgonzola"
             },
             "description": {
               "ru": "Груша, моцарелла и сырный соус с мёдом и кедровым орехом",
               "uz": "Груша, моцарелла и сырный соус с мёдом и кедровым орехом",
-              "en": "Груша, моцарелла и сырный соус с мёдом и кедровым орехом"
+              "en": "Pear, mozzarella, and cheese sauce with honey and pine nuts"
             },
             "price": 80000,
             "imageUrl": "",
@@ -490,12 +838,12 @@
             "name": {
               "ru": "Копчёная индейка",
               "uz": "Копчёная индейка",
-              "en": "Копчёная индейка"
+              "en": "Smoked Turkey Pizza"
             },
             "description": {
               "ru": "Копчёная индейка, моцарелла и черри на томатном соусе",
               "uz": "Копчёная индейка, моцарелла и черри на томатном соусе",
-              "en": "Копчёная индейка, моцарелла и черри на томатном соусе"
+              "en": "Smoked turkey, mozzarella, and cherry tomatoes on tomato sauce"
             },
             "price": 85000,
             "imageUrl": "",
@@ -506,15 +854,15 @@
             "name": {
               "ru": "Цезарь-пицца",
               "uz": "Цезарь-пицца",
-              "en": "Цезарь-пицца"
+              "en": "Caesar Pizza"
             },
             "description": {
               "ru": "Куриное филе, чеддер и моцарелла с соусом песто, оливками, пармезаном и заправкой цезарь",
               "uz": "Куриное филе, чеддер и моцарелла с соусом песто, оливками, пармезаном и заправкой цезарь",
-              "en": "Куриное филе, чеддер и моцарелла с соусом песто, оливками, пармезаном и заправкой цезарь"
+              "en": "Chicken fillet, cheddar, and mozzarella with pesto, olives, Parmesan, and Caesar dressing"
             },
             "price": 95000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pizza-caesar.jpg?v=1786716154",
             "available": true
           },
           {
@@ -522,15 +870,15 @@
             "name": {
               "ru": "Пепперони",
               "uz": "Пепперони",
-              "en": "Пепперони"
+              "en": "Pepperoni"
             },
             "description": {
               "ru": "Томатный соус, моцарелла и колбаса",
               "uz": "Томатный соус, моцарелла и колбаса",
-              "en": "Томатный соус, моцарелла и колбаса"
+              "en": "Tomato sauce, mozzarella, and pepperoni"
             },
             "price": 82000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pizza-pepperoni.jpg?v=1786716154",
             "available": true
           },
           {
@@ -538,12 +886,12 @@
             "name": {
               "ru": "Пепперони халапеньо",
               "uz": "Пепперони халапеньо",
-              "en": "Пепперони халапеньо"
+              "en": "Pepperoni & Jalapeño"
             },
             "description": {
               "ru": "Пепперони, халапеньо и моцарелла на томатном соусе",
               "uz": "Пепперони, халапеньо и моцарелла на томатном соусе",
-              "en": "Пепперони, халапеньо и моцарелла на томатном соусе"
+              "en": "Pepperoni, jalapeño, and mozzarella on tomato sauce"
             },
             "price": 86000,
             "imageUrl": "",
@@ -557,15 +905,15 @@
             "name": {
               "ru": "Мясная",
               "uz": "Мясная",
-              "en": "Мясная"
+              "en": "Meat Lovers"
             },
             "description": {
               "ru": "Говядина и рукола с моцареллой и пармезаном",
               "uz": "Говядина и рукола с моцареллой и пармезаном",
-              "en": "Говядина и рукола с моцареллой и пармезаном"
+              "en": "Beef and arugula with mozzarella and Parmesan"
             },
             "price": 105000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pizza-meat.jpg?v=1786716154",
             "available": true,
             "badges": [
               "hit"
@@ -576,12 +924,12 @@
             "name": {
               "ru": "Гавайская",
               "uz": "Гавайская",
-              "en": "Гавайская"
+              "en": "Hawaiian"
             },
             "description": {
               "ru": "Ветчина, ананас и моцарелла на томатном соусе",
               "uz": "Ветчина, ананас и моцарелла на томатном соусе",
-              "en": "Ветчина, ананас и моцарелла на томатном соусе"
+              "en": "Ham, pineapple, and mozzarella on tomato sauce"
             },
             "price": 88000,
             "imageUrl": "",
@@ -594,7 +942,7 @@
         "name": {
           "ru": "Бургеры",
           "uz": "Бургеры",
-          "en": "Бургеры"
+          "en": "Burgers"
         },
         "items": [
           {
@@ -602,12 +950,12 @@
             "name": {
               "ru": "Бургер с говядиной",
               "uz": "Бургер с говядиной",
-              "en": "Бургер с говядиной"
+              "en": "Beef Burger"
             },
             "description": {
               "ru": "Говяжья котлета, чеддер, солёные огурцы и томат в чёрной булочке",
               "uz": "Говяжья котлета, чеддер, солёные огурцы и томат в чёрной булочке",
-              "en": "Говяжья котлета, чеддер, солёные огурцы и томат в чёрной булочке"
+              "en": "Beef patty, cheddar, pickles, and tomato in a black bun"
             },
             "price": 58000,
             "imageUrl": "",
@@ -618,12 +966,12 @@
             "name": {
               "ru": "Бургер со шницелем",
               "uz": "Бургер со шницелем",
-              "en": "Бургер со шницелем"
+              "en": "Schnitzel Burger"
             },
             "description": {
               "ru": "Куриный шницель, солёные огурцы и томат в белой булочке",
               "uz": "Куриный шницель, солёные огурцы и томат в белой булочке",
-              "en": "Куриный шницель, солёные огурцы и томат в белой булочке"
+              "en": "Chicken schnitzel, pickles, and tomato in a white bun"
             },
             "price": 45000,
             "imageUrl": "",
@@ -634,12 +982,12 @@
             "name": {
               "ru": "Бургер с цыплёнком",
               "uz": "Бургер с цыплёнком",
-              "en": "Бургер с цыплёнком"
+              "en": "Chicken Burger"
             },
             "description": {
               "ru": "Куриная котлета, чеддер, солёные огурцы и томат в белой булочке",
               "uz": "Куриная котлета, чеддер, солёные огурцы и томат в белой булочке",
-              "en": "Куриная котлета, чеддер, солёные огурцы и томат в белой булочке"
+              "en": "Chicken patty, cheddar, pickles, and tomato in a white bun"
             },
             "price": 47000,
             "imageUrl": "",
@@ -650,12 +998,12 @@
             "name": {
               "ru": "Бургер со стейком",
               "uz": "Бургер со стейком",
-              "en": "Бургер со стейком"
+              "en": "Steak Burger"
             },
             "description": {
               "ru": "Говяжья вырезка, солёные огурцы и томат в чёрной булочке",
               "uz": "Говяжья вырезка, солёные огурцы и томат в чёрной булочке",
-              "en": "Говяжья вырезка, солёные огурцы и томат в чёрной булочке"
+              "en": "Beef tenderloin, pickles, and tomato in a black bun"
             },
             "price": 94000,
             "imageUrl": "",
@@ -668,7 +1016,7 @@
         "name": {
           "ru": "Мясо",
           "uz": "Мясо",
-          "en": "Мясо"
+          "en": "Meat"
         },
         "items": [
           {
@@ -676,15 +1024,15 @@
             "name": {
               "ru": "Медальоны из говядины",
               "uz": "Медальоны из говядины",
-              "en": "Медальоны из говядины"
+              "en": "Beef Medallions"
             },
             "description": {
               "ru": "Говяжья вырезка, картофель, грибы и деми-глас",
               "uz": "Говяжья вырезка, картофель, грибы и деми-глас",
-              "en": "Говяжья вырезка, картофель, грибы и деми-глас"
+              "en": "Beef tenderloin, potatoes, mushrooms, and demi-glace"
             },
             "price": 128000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-medallions.jpg?v=1786716154",
             "available": true
           },
           {
@@ -692,15 +1040,15 @@
             "name": {
               "ru": "Бефстроганов",
               "uz": "Бефстроганов",
-              "en": "Бефстроганов"
+              "en": "Beef Stroganoff"
             },
             "description": {
               "ru": "Говяжья вырезка с грибами в сливочном соусе",
               "uz": "Говяжья вырезка с грибами в сливочном соусе",
-              "en": "Говяжья вырезка с грибами в сливочном соусе"
+              "en": "Beef tenderloin with mushrooms in cream sauce"
             },
             "price": 90000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-befstroganov.jpg?v=1786716154",
             "available": true
           },
           {
@@ -708,15 +1056,15 @@
             "name": {
               "ru": "Говяжьи щёчки",
               "uz": "Говяжьи щёчки",
-              "en": "Говяжьи щёчки"
+              "en": "Braised Beef Cheeks"
             },
             "description": {
               "ru": "Томлёные щёчки на картофельном пюре с деми-гласом",
               "uz": "Томлёные щёчки на картофельном пюре с деми-гласом",
-              "en": "Томлёные щёчки на картофельном пюре с деми-гласом"
+              "en": "Slow-braised cheeks on mashed potatoes with demi-glace"
             },
             "price": 113000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-beef-cheeks.jpg?v=1786716154",
             "available": true,
             "badges": [
               "hit"
@@ -727,15 +1075,15 @@
             "name": {
               "ru": "Лопатка ягнёнка",
               "uz": "Лопатка ягнёнка",
-              "en": "Лопатка ягнёнка"
+              "en": "Lamb Shoulder"
             },
             "description": {
               "ru": "Томлёная лопатка в медово-соевой глазури, с деми-гласом и черри",
               "uz": "Томлёная лопатка в медово-соевой глазури, с деми-гласом и черри",
-              "en": "Томлёная лопатка в медово-соевой глазури, с деми-гласом и черри"
+              "en": "Slow-braised shoulder in honey-soy glaze, with demi-glace and cherry tomatoes"
             },
             "price": 120000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-lamb-shoulder.jpg?v=1786716154",
             "available": true,
             "badges": [
               "hit"
@@ -746,15 +1094,15 @@
             "name": {
               "ru": "Каре ягнёнка",
               "uz": "Каре ягнёнка",
-              "en": "Каре ягнёнка"
+              "en": "Rack of Lamb"
             },
             "description": {
               "ru": "С розмарином, молодой картофель и оливки",
               "uz": "С розмарином, молодой картофель и оливки",
-              "en": "С розмарином, молодой картофель и оливки"
+              "en": "With rosemary, baby potatoes, and olives"
             },
             "price": 135000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-lamb-rack.jpg?v=1786716154",
             "available": true
           },
           {
@@ -762,12 +1110,12 @@
             "name": {
               "ru": "Картошка по-домашнему",
               "uz": "Картошка по-домашнему",
-              "en": "Картошка по-домашнему"
+              "en": "Homestyle Beef & Potatoes"
             },
             "description": {
               "ru": "Говяжья вырезка с шампиньонами, луком и картофелем",
               "uz": "Говяжья вырезка с шампиньонами, луком и картофелем",
-              "en": "Говяжья вырезка с шампиньонами, луком и картофелем"
+              "en": "Beef tenderloin with mushrooms, onion, and potatoes"
             },
             "price": 58000,
             "imageUrl": "",
@@ -778,12 +1126,12 @@
             "name": {
               "ru": "Говяжьи рёбра",
               "uz": "Говяжьи рёбра",
-              "en": "Говяжьи рёбра"
+              "en": "Braised Beef Short Ribs"
             },
             "description": {
               "ru": "Томлёные рёбра с брокколи в соево-томатном соусе",
               "uz": "Томлёные рёбра с брокколи в соево-томатном соусе",
-              "en": "Томлёные рёбра с брокколи в соево-томатном соусе"
+              "en": "Slow-braised ribs with broccoli in soy-tomato sauce"
             },
             "price": 108000,
             "imageUrl": "",
@@ -794,12 +1142,12 @@
             "name": {
               "ru": "Языки ягнёнка",
               "uz": "Языки ягнёнка",
-              "en": "Языки ягнёнка"
+              "en": "Lamb Tongues"
             },
             "description": {
               "ru": "Бараньи язычки в сливочно-грибном соусе",
               "uz": "Бараньи язычки в сливочно-грибном соусе",
-              "en": "Бараньи язычки в сливочно-грибном соусе"
+              "en": "Lamb tongues in creamy mushroom sauce"
             },
             "price": 93000,
             "imageUrl": "",
@@ -810,12 +1158,12 @@
             "name": {
               "ru": "Костный мозг с вырезкой",
               "uz": "Костный мозг с вырезкой",
-              "en": "Костный мозг с вырезкой"
+              "en": "Bone Marrow & Tenderloin"
             },
             "description": {
               "ru": "Костный мозг, говяжья вырезка и соус барбекю",
               "uz": "Костный мозг, говяжья вырезка и соус барбекю",
-              "en": "Костный мозг, говяжья вырезка и соус барбекю"
+              "en": "Bone marrow, beef tenderloin, and barbecue sauce"
             },
             "price": 125000,
             "imageUrl": "",
@@ -826,15 +1174,15 @@
             "name": {
               "ru": "Голень ягнёнка",
               "uz": "Голень ягнёнка",
-              "en": "Голень ягнёнка"
+              "en": "Lamb Shank"
             },
             "description": {
               "ru": "Томлёная, с молодым картофелем и овощами",
               "uz": "Томлёная, с молодым картофелем и овощами",
-              "en": "Томлёная, с молодым картофелем и овощами"
+              "en": "Slow-braised, with baby potatoes and vegetables"
             },
             "price": 173000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-lamb-shank.jpg?v=1786716154",
             "available": true
           }
         ]
@@ -844,7 +1192,7 @@
         "name": {
           "ru": "Рыба",
           "uz": "Рыба",
-          "en": "Рыба"
+          "en": "Fish"
         },
         "items": [
           {
@@ -852,12 +1200,12 @@
             "name": {
               "ru": "Лосось на гриле",
               "uz": "Лосось на гриле",
-              "en": "Лосось на гриле"
+              "en": "Grilled Salmon"
             },
             "description": {
               "ru": "Филе лосося с лимоном и овощным соте",
               "uz": "Филе лосося с лимоном и овощным соте",
-              "en": "Филе лосося с лимоном и овощным соте"
+              "en": "Salmon fillet with lemon and vegetable sauté"
             },
             "price": 113000,
             "imageUrl": "",
@@ -868,12 +1216,12 @@
             "name": {
               "ru": "Дорадо на гриле",
               "uz": "Дорадо на гриле",
-              "en": "Дорадо на гриле"
+              "en": "Grilled Sea Bream"
             },
             "description": {
               "ru": "Дорадо целиком, с лимоном и оливковым маслом",
               "uz": "Дорадо целиком, с лимоном и оливковым маслом",
-              "en": "Дорадо целиком, с лимоном и оливковым маслом"
+              "en": "Whole sea bream with lemon and olive oil"
             },
             "price": 113000,
             "imageUrl": "",
@@ -884,15 +1232,15 @@
             "name": {
               "ru": "Лосось с диким рисом",
               "uz": "Лосось с диким рисом",
-              "en": "Лосось с диким рисом"
+              "en": "Salmon with Wild Rice"
             },
             "description": {
               "ru": "Лосось, дикий рис и медово-лаймовый соус",
               "uz": "Лосось, дикий рис и медово-лаймовый соус",
-              "en": "Лосось, дикий рис и медово-лаймовый соус"
+              "en": "Salmon, wild rice, and honey-lime sauce"
             },
             "price": 95000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-salmon-rice.jpg?v=1786716154",
             "available": true,
             "badges": [
               "hit"
@@ -905,7 +1253,7 @@
         "name": {
           "ru": "Птица",
           "uz": "Птица",
-          "en": "Птица"
+          "en": "Poultry"
         },
         "items": [
           {
@@ -913,15 +1261,15 @@
             "name": {
               "ru": "Шницель",
               "uz": "Шницель",
-              "en": "Шницель"
+              "en": "Chicken Schnitzel"
             },
             "description": {
               "ru": "Куриное филе в хрустящей панировке с миксом зелени, черри и пармезаном",
               "uz": "Куриное филе в хрустящей панировке с миксом зелени, черри и пармезаном",
-              "en": "Куриное филе в хрустящей панировке с миксом зелени, черри и пармезаном"
+              "en": "Crispy breaded chicken fillet with mixed greens, cherry tomatoes, and Parmesan"
             },
             "price": 49000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-schnitzel.jpg?v=1786716154",
             "available": true
           },
           {
@@ -929,15 +1277,15 @@
             "name": {
               "ru": "Котлета из цыплёнка",
               "uz": "Котлета из цыплёнка",
-              "en": "Котлета из цыплёнка"
+              "en": "Chicken Cutlet"
             },
             "description": {
               "ru": "Из куриного филе на сливочном масле, с грибным соусом",
               "uz": "Из куриного филе на сливочном масле, с грибным соусом",
-              "en": "Из куриного филе на сливочном масле, с грибным соусом"
+              "en": "Pan-fried chicken fillet in butter with mushroom sauce"
             },
             "price": 47000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-cutlet.jpg?v=1786716154",
             "available": true
           },
           {
@@ -945,12 +1293,12 @@
             "name": {
               "ru": "Кордон блю",
               "uz": "Кордон блю",
-              "en": "Кордон блю"
+              "en": "Chicken Cordon Bleu"
             },
             "description": {
               "ru": "Куриное филе с моцареллой и копчёной индейкой в хрустящей панировке, с грибным соусом",
               "uz": "Куриное филе с моцареллой и копчёной индейкой в хрустящей панировке, с грибным соусом",
-              "en": "Куриное филе с моцареллой и копчёной индейкой в хрустящей панировке, с грибным соусом"
+              "en": "Chicken fillet with mozzarella and smoked turkey in crispy breading, with mushroom sauce"
             },
             "price": 89000,
             "imageUrl": "",
@@ -961,15 +1309,15 @@
             "name": {
               "ru": "Крылья терияки",
               "uz": "Крылья терияки",
-              "en": "Крылья терияки"
+              "en": "Teriyaki Wings"
             },
             "description": {
               "ru": "Куриные крылья в соусе терияки со шрирачей, лаймом и кунжутом",
               "uz": "Куриные крылья в соусе терияки со шрирачей, лаймом и кунжутом",
-              "en": "Куриные крылья в соусе терияки со шрирачей, лаймом и кунжутом"
+              "en": "Chicken wings in teriyaki sauce with sriracha, lime, and sesame"
             },
             "price": 52000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-wings.jpg?v=1786716154",
             "available": true,
             "badges": [
               "spicy"
@@ -980,15 +1328,15 @@
             "name": {
               "ru": "Утиная грудка",
               "uz": "Утиная грудка",
-              "en": "Утиная грудка"
+              "en": "Duck Breast"
             },
             "description": {
               "ru": "С ягодным соусом и тыквенным пюре",
               "uz": "С ягодным соусом и тыквенным пюре",
-              "en": "С ягодным соусом и тыквенным пюре"
+              "en": "With berry sauce and pumpkin purée"
             },
             "price": 76000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-duck-breast.jpg?v=1786716154",
             "available": true
           },
           {
@@ -996,15 +1344,15 @@
             "name": {
               "ru": "Рулет из цыплёнка",
               "uz": "Рулет из цыплёнка",
-              "en": "Рулет из цыплёнка"
+              "en": "Chicken Roulade"
             },
             "description": {
               "ru": "С болгарским перцем, гороховым пюре и деми-гласом с розмарином",
               "uz": "С болгарским перцем, гороховым пюре и деми-гласом с розмарином",
-              "en": "С болгарским перцем, гороховым пюре и деми-гласом с розмарином"
+              "en": "With bell pepper, green pea purée, and rosemary demi-glace"
             },
             "price": 65000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-roll.jpg?v=1786716154",
             "available": true,
             "badges": [
               "hit"
@@ -1015,15 +1363,15 @@
             "name": {
               "ru": "Окорочок цыплёнка",
               "uz": "Окорочок цыплёнка",
-              "en": "Окорочок цыплёнка"
+              "en": "Chicken Leg"
             },
             "description": {
               "ru": "С шампиньонами и луком-шалот, соус с розмарином",
               "uz": "С шампиньонами и луком-шалот, соус с розмарином",
-              "en": "С шампиньонами и луком-шалот, соус с розмарином"
+              "en": "With mushrooms and shallots, rosemary sauce"
             },
             "price": 69000,
-            "imageUrl": "",
+            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-drumstick.jpg?v=1786716154",
             "available": true,
             "badges": [
               "hit"
@@ -1036,7 +1384,7 @@
         "name": {
           "ru": "Стейки",
           "uz": "Стейки",
-          "en": "Стейки"
+          "en": "Steaks"
         },
         "items": [
           {
@@ -1044,12 +1392,12 @@
             "name": {
               "ru": "Стейк мачете",
               "uz": "Стейк мачете",
-              "en": "Стейк мачете"
+              "en": "Machete Steak"
             },
             "description": {
               "ru": "С насыщенным мясным вкусом, на гриле",
               "uz": "С насыщенным мясным вкусом, на гриле",
-              "en": "С насыщенным мясным вкусом, на гриле"
+              "en": "Rich beefy flavor, grilled"
             },
             "price": 145000,
             "imageUrl": "",
@@ -1063,12 +1411,12 @@
             "name": {
               "ru": "Рибай",
               "uz": "Рибай",
-              "en": "Рибай"
+              "en": "Ribeye"
             },
             "description": {
               "ru": "Говядина на гриле с соусом тимьян",
               "uz": "Говядина на гриле с соусом тимьян",
-              "en": "Говядина на гриле с соусом тимьян"
+              "en": "Grilled beef with thyme sauce"
             },
             "price": 168000,
             "imageUrl": "",
@@ -1079,12 +1427,12 @@
             "name": {
               "ru": "Рибай на кости",
               "uz": "Рибай на кости",
-              "en": "Рибай на кости"
+              "en": "Bone-In Ribeye"
             },
             "description": {
               "ru": "Стейк на кости из говядины, обжаренный на гриле",
               "uz": "Стейк на кости из говядины, обжаренный на гриле",
-              "en": "Стейк на кости из говядины, обжаренный на гриле"
+              "en": "Bone-in beef steak, chargrilled"
             },
             "price": 168000,
             "imageUrl": "",
@@ -1100,7 +1448,7 @@
         "name": {
           "ru": "Гарниры",
           "uz": "Гарниры",
-          "en": "Гарниры"
+          "en": "Sides"
         },
         "items": [
           {
@@ -1108,12 +1456,12 @@
             "name": {
               "ru": "Картофель фри",
               "uz": "Картофель фри",
-              "en": "Картофель фри"
+              "en": "French Fries"
             },
             "description": {
               "ru": "Хрустящий, с томатным соусом",
               "uz": "Хрустящий, с томатным соусом",
-              "en": "Хрустящий, с томатным соусом"
+              "en": "Crispy, with tomato sauce"
             },
             "price": 25000,
             "imageUrl": "",
@@ -1124,12 +1472,12 @@
             "name": {
               "ru": "Овощи на гриле",
               "uz": "Овощи на гриле",
-              "en": "Овощи на гриле"
+              "en": "Grilled Vegetables"
             },
             "description": {
               "ru": "Болгарский перец, кабачки, баклажаны и томаты",
               "uz": "Болгарский перец, кабачки, баклажаны и томаты",
-              "en": "Болгарский перец, кабачки, баклажаны и томаты"
+              "en": "Bell pepper, zucchini, eggplant, and tomatoes"
             },
             "price": 33000,
             "imageUrl": "",
@@ -1140,12 +1488,12 @@
             "name": {
               "ru": "Беби картофель с зеленью",
               "uz": "Беби картофель с зеленью",
-              "en": "Беби картофель с зеленью"
+              "en": "Baby Potatoes with Herbs"
             },
             "description": {
               "ru": "Молодой картофель с зеленью и чесноком",
               "uz": "Молодой картофель с зеленью и чесноком",
-              "en": "Молодой картофель с зеленью и чесноком"
+              "en": "Baby potatoes with herbs and garlic"
             },
             "price": 28000,
             "imageUrl": "",
@@ -1156,12 +1504,12 @@
             "name": {
               "ru": "Рис с овощами",
               "uz": "Рис с овощами",
-              "en": "Рис с овощами"
+              "en": "Rice with Vegetables"
             },
             "description": {
               "ru": "Рассыпчатый рис с болгарским перцем и зеленью",
               "uz": "Рассыпчатый рис с болгарским перцем и зеленью",
-              "en": "Рассыпчатый рис с болгарским перцем и зеленью"
+              "en": "Fluffy rice with bell pepper and greens"
             },
             "price": 19000,
             "imageUrl": "",
@@ -1172,12 +1520,12 @@
             "name": {
               "ru": "Картофель по-деревенски",
               "uz": "Картофель по-деревенски",
-              "en": "Картофель по-деревенски"
+              "en": "Country-Style Potatoes"
             },
             "description": {
               "ru": "Картофель дольками с чесноком, петрушкой и томатным соусом",
               "uz": "Картофель дольками с чесноком, петрушкой и томатным соусом",
-              "en": "Картофель дольками с чесноком, петрушкой и томатным соусом"
+              "en": "Potato wedges with garlic, parsley, and tomato sauce"
             },
             "price": 26000,
             "imageUrl": "",
@@ -1190,7 +1538,7 @@
         "name": {
           "ru": "Хлеб",
           "uz": "Хлеб",
-          "en": "Хлеб"
+          "en": "Bread"
         },
         "items": [
           {
@@ -1198,12 +1546,12 @@
             "name": {
               "ru": "Бородинский хлеб",
               "uz": "Бородинский хлеб",
-              "en": "Бородинский хлеб"
+              "en": "Dark Rye Bread"
             },
             "description": {
               "ru": "Ржаной хлеб на закваске, подаётся ломтиками",
               "uz": "Ржаной хлеб на закваске, подаётся ломтиками",
-              "en": "Ржаной хлеб на закваске, подаётся ломтиками"
+              "en": "Sourdough rye bread, sliced"
             },
             "price": 15000,
             "imageUrl": "",
@@ -1214,12 +1562,12 @@
             "name": {
               "ru": "Французский хлеб",
               "uz": "Французский хлеб",
-              "en": "Французский хлеб"
+              "en": "French Bread"
             },
             "description": {
               "ru": "Пшеничный хлеб с хрустящей корочкой, подаётся ломтиками",
               "uz": "Пшеничный хлеб с хрустящей корочкой, подаётся ломтиками",
-              "en": "Пшеничный хлеб с хрустящей корочкой, подаётся ломтиками"
+              "en": "Crusty wheat bread, sliced"
             },
             "price": 15000,
             "imageUrl": "",
@@ -1230,15 +1578,79 @@
             "name": {
               "ru": "Хлебная корзина",
               "uz": "Хлебная корзина",
-              "en": "Хлебная корзина"
+              "en": "Bread Basket"
             },
             "description": {
               "ru": "Бородинский и французский хлеб",
               "uz": "Бородинский и французский хлеб",
-              "en": "Бородинский и французский хлеб"
+              "en": "Dark rye and French bread"
             },
             "price": 30000,
             "imageUrl": "",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "dobavki",
+        "name": {
+          "ru": "Добавки",
+          "uz": "Добавки",
+          "en": "Extras"
+        },
+        "items": [
+          {
+            "id": "dobavki-smetana",
+            "name": {
+              "ru": "Сметана 50г",
+              "uz": "Сметана 50г",
+              "en": "Sour Cream 50g"
+            },
+            "description": {
+              "ru": "",
+              "uz": "",
+              "en": ""
+            },
+            "price": 10000,
+            "imageUrl": "",
+            "weight": 50,
+            "measureUnit": "г",
+            "available": true
+          },
+          {
+            "id": "dobavki-sgushchyonnoe-moloko",
+            "name": {
+              "ru": "Сгущённое молоко 50г",
+              "uz": "Сгущённое молоко 50г",
+              "en": "Condensed Milk 50g"
+            },
+            "description": {
+              "ru": "",
+              "uz": "",
+              "en": ""
+            },
+            "price": 10000,
+            "imageUrl": "",
+            "weight": 50,
+            "measureUnit": "г",
+            "available": true
+          },
+          {
+            "id": "dobavki-myod",
+            "name": {
+              "ru": "Мёд 50г",
+              "uz": "Мёд 50г",
+              "en": "Honey 50g"
+            },
+            "description": {
+              "ru": "",
+              "uz": "",
+              "en": ""
+            },
+            "price": 15000,
+            "imageUrl": "",
+            "weight": 50,
+            "measureUnit": "г",
             "available": true
           }
         ]
