@@ -4,6 +4,7 @@ import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import type { Lang, MenuData, MenuItem, SectionKey } from "@/lib/types";
 import { BADGES, LANGS, UI, formatPrice, unitLabel } from "@/lib/i18n";
 import { brandView } from "@/lib/brand";
+import { trackPageView, trackItemClick } from "@/lib/analytics";
 
 function DishBadges({ badges, lang }: { badges?: string[]; lang: Lang }) {
   if (!badges?.length) return null;
@@ -94,17 +95,39 @@ export default function MenuApp({ menu }: { menu: MenuData }) {
     return () => clearTimeout(fallback);
   }, [menu]);
 
+  // Аналитика: фиксация посещения страницы меню
+  useEffect(() => {
+    trackPageView();
+  }, []);
+
   useEffect(() => {
     const dialog = dialogRef.current;
     if (selected) {
       if (!dialog?.open) dialog?.showModal();
       const newUrl = `${window.location.pathname}?item=${selected.id}`;
       window.history.replaceState({ itemId: selected.id }, "", newUrl);
+
+      // Аналитика: клик / открытие модалки блюда
+      let catName: string | undefined;
+      for (const secKey of ["food", "drinks"] as const) {
+        const foundCat = menu.sections[secKey]?.find((c) => c.items.some((i) => i.id === selected.id));
+        if (foundCat) {
+          catName = foundCat.name[lang] || foundCat.name.ru;
+          break;
+        }
+      }
+
+      trackItemClick({
+        id: selected.id,
+        name: selected.name[lang] || selected.name.ru || "Блюдо",
+        category: catName,
+        price: selected.price,
+      });
     } else {
       if (dialog?.open) dialog.close();
       window.history.replaceState({}, "", window.location.pathname);
     }
-  }, [selected]);
+  }, [selected, lang, menu]);
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 350);
