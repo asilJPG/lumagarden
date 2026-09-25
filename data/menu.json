@@ -36,7 +36,7 @@
               "en": "Slow-cooked rice in whole milk with butter and caramelized apples"
             },
             "price": 35000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/kasha-risovaya.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -110,7 +110,7 @@
               "en": "With condensed milk, sour cream, and fresh berries"
             },
             "price": 30000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/bliny-tvorog.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -126,7 +126,7 @@
               "en": "Nutella, banana, and fresh berries"
             },
             "price": 35000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/bliny-nutella.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -142,7 +142,7 @@
               "en": "With sour cream and fresh berries"
             },
             "price": 30000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/bliny-apple.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -158,7 +158,7 @@
               "en": "With onion and sour cream"
             },
             "price": 35000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/bliny-myaso.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           }
         ]
@@ -184,7 +184,7 @@
               "en": "With fresh microgreens"
             },
             "price": 30000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/omlet-yaichnica.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -200,7 +200,7 @@
               "en": "With fresh microgreens"
             },
             "price": 35000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/omlet-turkey.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -242,7 +242,7 @@
               "en": "With sour cream, condensed milk, strawberries, and blueberries"
             },
             "price": 32000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/breakfast-cottage.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -258,7 +258,7 @@
               "en": "Sour cream, strawberry purée, and powdered sugar"
             },
             "price": 48000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/breakfast-syrniki.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           }
         ]
@@ -284,7 +284,7 @@
               "en": "Eggs poached in tomato sauce with bell pepper and oregano. Served with crusty bread"
             },
             "price": 55000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/breakfast-shakshuka.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -358,7 +358,7 @@
               "en": "With cheese and fresh greens"
             },
             "price": 45000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/croissant-skrembl.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           }
         ]
@@ -384,7 +384,7 @@
               "en": "Tomatoes, cucumbers, peppers, avocado, and feta"
             },
             "price": 52000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/salad-greek.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -416,7 +416,7 @@
               "en": "Tuna, mixed greens, potatoes, and pesto"
             },
             "price": 56000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/salad-tuna.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -496,7 +496,7 @@
               "en": "Broccoli, green beans, peas, cucumbers, and arugula"
             },
             "price": 45000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/salad-vitamin.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true,
             "badges": [
               "hit"
@@ -579,7 +579,7 @@
               "en": "Homemade noodles, chicken, and quail egg"
             },
             "price": 32000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/soup-noodle.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -672,7 +672,7 @@
               "en": "Spinach pasta with cherry tomatoes, garlic, and basil"
             },
             "price": 72000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pasta-pomodoro.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -688,7 +688,7 @@
               "en": "Fettuccine with chicken and mushrooms in cream sauce"
             },
             "price": 68000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pasta-alfredo.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -720,7 +720,7 @@
               "en": "Beef ragù with celery and carrots"
             },
             "price": 68000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pasta-bolognese.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -752,7 +752,7 @@
               "en": "Penne in tomato sauce with garlic and basil"
             },
             "price": 61000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/pasta-arrabbiata.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true,
             "badges": [
               "hit",
@@ -1032,7 +1032,7 @@
               "en": "Beef tenderloin, potatoes, mushrooms, and demi-glace"
             },
             "price": 128000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-medallions.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -1048,7 +1048,7 @@
               "en": "Beef tenderloin with mushrooms in cream sauce"
             },
             "price": 90000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-befstroganov.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -1064,7 +1064,7 @@
               "en": "Slow-braised on mashed potatoes with demi-glace"
             },
             "price": 113000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-beef-cheeks.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true,
             "badges": [
               "hit"
@@ -1083,7 +1083,7 @@
               "en": "Slow-braised shoulder in honey-soy glaze, with demi-glace and cherry tomatoes"
             },
             "price": 120000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-lamb-shoulder.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true,
             "badges": [
               "hit"
@@ -1102,7 +1102,7 @@
               "en": "With rosemary, baby potatoes, and olives"
             },
             "price": 135000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-lamb-rack.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -1182,7 +1182,7 @@
               "en": "Slow-braised, with baby potatoes and vegetables"
             },
             "price": 173000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-lamb-shank.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           }
         ]
@@ -1240,7 +1240,7 @@
               "en": "Salmon, wild rice, and honey-lime sauce"
             },
             "price": 95000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-salmon-rice.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true,
             "badges": [
               "hit"
@@ -1269,7 +1269,7 @@
               "en": "Crispy breaded fillet with greens, cherry tomatoes, and Parmesan"
             },
             "price": 49000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-schnitzel.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -1285,7 +1285,7 @@
               "en": "In butter with mushroom sauce"
             },
             "price": 47000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-cutlet.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -1317,7 +1317,7 @@
               "en": "Chicken wings in teriyaki sauce with sriracha, lime, and sesame"
             },
             "price": 52000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-wings.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true,
             "badges": [
               "spicy"
@@ -1336,7 +1336,7 @@
               "en": "With berry sauce and pumpkin purée"
             },
             "price": 76000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-duck-breast.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true
           },
           {
@@ -1352,7 +1352,7 @@
               "en": "With bell pepper, pea purée, and rosemary demi-glace"
             },
             "price": 65000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-roll.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true,
             "badges": [
               "hit"
@@ -1371,7 +1371,7 @@
               "en": "With mushrooms, shallots, and rosemary sauce"
             },
             "price": 69000,
-            "imageUrl": "https://vesuiwsmamurbhqxjjha.supabase.co/storage/v1/object/public/lokmaco-uploads/meat-drumstick.jpg?v=1786716154",
+            "imageUrl": "",
             "available": true,
             "badges": [
               "hit"
