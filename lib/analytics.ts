@@ -10,7 +10,7 @@ export interface TrackItemOptions {
   price?: number;
 }
 
-const API_TRACK_URL = 'https://v2.lokmaco.uz/api/analytics/menu/track';
+const API_TRACK_URL = 'https://lokmaco-web-v2.vercel.app/api/analytics/menu/track';
 const SITE_ID = 'luma_garden';
 
 function getVisitorId(): string {
