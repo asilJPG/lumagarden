@@ -56,22 +56,39 @@ export function sendAnalyticsEvent(eventType: string, extra: Record<string, unkn
 
   const json = JSON.stringify(payload);
 
-  if (typeof navigator !== 'undefined' && typeof navigator.sendBeacon === 'function') {
+  // 1. Приоритетный путь: fetch с keepalive и text/plain
+  // text/plain не требует предварительного CORS OPTIONS preflight запроса,
+  // поэтому мгновенно проходит в iOS Safari, Chrome Mobile и не блокируется WebKit
+  if (typeof fetch === 'function') {
     try {
-      const blob = new Blob([json], { type: 'application/json' });
-      if (navigator.sendBeacon(API_TRACK_URL, blob)) return;
+      fetch(API_TRACK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain' },
+        body: json,
+        mode: 'cors',
+        keepalive: true,
+        credentials: 'omit',
+      }).catch(() => {
+        trySendBeacon(json);
+      });
+      return;
     } catch {
-      // fallback
+      // Игнорируем и пробуем sendBeacon
     }
   }
 
-  fetch(API_TRACK_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: json,
-    mode: 'cors',
-    keepalive: true,
-  }).catch(() => {});
+  trySendBeacon(json);
+}
+
+function trySendBeacon(json: string) {
+  if (typeof navigator !== 'undefined' && typeof navigator.sendBeacon === 'function') {
+    try {
+      const blob = new Blob([json], { type: 'text/plain' });
+      navigator.sendBeacon(API_TRACK_URL, blob);
+    } catch {
+      // noop
+    }
+  }
 }
 
 export function trackPageView(path?: string) {
