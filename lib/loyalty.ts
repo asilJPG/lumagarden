@@ -16,6 +16,7 @@ const IIKO_API_KEY = process.env.IIKO_API_KEY;
 const IIKO_APP_ID = process.env.IIKO_APP_ID;
 const IIKO_CLIENT_SECRET = process.env.IIKO_CLIENT_SECRET;
 const IIKO_ORGANIZATION_ID = process.env.IIKO_ORGANIZATION_ID;
+const IIKO_PROGRAM_ID = "44730000-0f48-3056-51c6-08dee376db66";
 
 // Проверяем, заданы ли все параметры авторизации iiko API v2
 export const usingIiko = !!(IIKO_API_KEY && IIKO_APP_ID && IIKO_CLIENT_SECRET && IIKO_ORGANIZATION_ID);
@@ -122,27 +123,19 @@ async function iikoGetCustomer(type: "phone" | "id", value: string): Promise<Loy
   }
 }
 
-async function enrollInActivePrograms(customerId: string) {
+// Подключает гостя только к основной бонусной программе (IIKO_PROGRAM_ID).
+// Раньше подключал ко ВСЕМ активным — из-за этого новенькие получали 1 млн
+// от внутренней/VIP программы, которая не для всех.
+async function enrollInMainProgram(customerId: string) {
+  if (!IIKO_PROGRAM_ID) return;
   try {
-    const progData = await iikoFetch<{ Programs: any[] }>("loyalty/iiko/program", {
+    await iikoFetch<any>("loyalty/iiko/customer/program/add", {
       organizationId: IIKO_ORGANIZATION_ID,
+      customerId,
+      programId: IIKO_PROGRAM_ID,
     });
-    if (progData.Programs && progData.Programs.length > 0) {
-      for (const program of progData.Programs) {
-        if (program.isActive && program.id) {
-          await iikoFetch<any>("loyalty/iiko/customer/program/add", {
-            organizationId: IIKO_ORGANIZATION_ID,
-            customerId,
-            programId: program.id,
-          }).catch((e) => {
-            // Игнорируем ошибку, если пользователь уже добавлен в программу
-            console.warn(`Program enrollment notice for ${program.id}:`, e.message || e);
-          });
-        }
-      }
-    }
-  } catch (progErr) {
-    console.error("Failed to fetch programs or enroll customer:", progErr);
+  } catch (e: any) {
+    console.warn(`Program enrollment notice for ${IIKO_PROGRAM_ID}:`, e.message || e);
   }
 }
 
@@ -162,8 +155,7 @@ async function iikoGetOrCreate(phone: string, name: string): Promise<LoyaltyCust
       });
       existing.cardNumber = cardNum;
     }
-    // Всегда проверяем и подключаем бонусные программы для существующих
-    await enrollInActivePrograms(existing.id);
+    await enrollInMainProgram(existing.id);
     const updated = await iikoGetCustomer("id", existing.id);
     return updated || existing;
   }
@@ -180,8 +172,7 @@ async function iikoGetOrCreate(phone: string, name: string): Promise<LoyaltyCust
 
   const customerId = createResult.id;
 
-  // Подписываем нового гостя на бонусные программы
-  await enrollInActivePrograms(customerId);
+  await enrollInMainProgram(customerId);
 
   // Получаем и возвращаем созданного клиента
   const created = await iikoGetCustomer("id", customerId);
