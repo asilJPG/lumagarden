@@ -399,7 +399,7 @@
               "uz": "Цыплёнок, айсберг, черри и перепелиные яйца",
               "en": "Chicken, iceberg, cherry tomatoes, and quail eggs"
             },
-            "price": 58000,
+            "price": 50000,
             "imageUrl": "",
             "available": true
           },
@@ -415,7 +415,7 @@
               "uz": "Тунец, микс салатов, картофель и песто",
               "en": "Tuna, mixed greens, potatoes, and pesto"
             },
-            "price": 56000,
+            "price": 49000,
             "imageUrl": "",
             "available": true
           },
@@ -957,7 +957,7 @@
               "uz": "Говяжья котлета, чеддер, солёные огурцы и томат в чёрной булочке",
               "en": "Beef patty, cheddar, pickles, and tomato in a black bun"
             },
-            "price": 58000,
+            "price": 61000,
             "imageUrl": "",
             "available": true
           },
@@ -1101,7 +1101,7 @@
               "uz": "С розмарином, молодой картофель и оливки",
               "en": "With rosemary, baby potatoes, and olives"
             },
-            "price": 135000,
+            "price": 155000,
             "imageUrl": "",
             "available": true
           },
@@ -1223,7 +1223,7 @@
               "uz": "Дорадо целиком, с лимоном и оливковым маслом",
               "en": "Whole fish with lemon and olive oil"
             },
-            "price": 113000,
+            "price": 160000,
             "imageUrl": "",
             "available": true
           },
@@ -1239,7 +1239,7 @@
               "uz": "Лосось, дикий рис и медово-лаймовый соус",
               "en": "Salmon, wild rice, and honey-lime sauce"
             },
-            "price": 95000,
+            "price": 113000,
             "imageUrl": "",
             "available": true,
             "badges": [
@@ -1399,7 +1399,7 @@
               "uz": "С насыщенным мясным вкусом, на гриле",
               "en": "Rich beefy flavor, grilled"
             },
-            "price": 145000,
+            "price": 150000,
             "imageUrl": "",
             "available": true,
             "badges": [
@@ -1418,7 +1418,7 @@
               "uz": "Говядина на гриле с соусом тимьян",
               "en": "Grilled with thyme sauce"
             },
-            "price": 168000,
+            "price": 173000,
             "imageUrl": "",
             "available": true
           },
